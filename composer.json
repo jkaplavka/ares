@@ -1,0 +1,31 @@
+{
+  "name": "kaplavka/ares",
+  "description": "Sample library to demonstrate communication with ARES register of business entities in Czech republic",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Jan Kaplavka",
+      "email": "jan.kaplavka@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Ares\\": "lib/"
+    }
+  },
+  "require": {
+    "php": "^8.0",
+    "ext-json": "*",
+    "ext-curl": "*",
+    "ext-simplexml": "*",
+    "ext-tokenizer": "*",
+    "ext-xmlwriter": "*",
+    "guzzlehttp/guzzle": "^7.3",
+    "jms/serializer": "^3.14",
+    "webmozart/assert": "^1.10"
+  },
+  "require-dev": {
+    "slevomat/coding-standard": "^7.0",
+    "phpstan/phpstan": "^0.12.99"
+  }
+}
