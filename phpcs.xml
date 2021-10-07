@@ -11,6 +11,7 @@
     <arg name="extensions" value="php"/>
 
     <file>lib/</file>
+    <file>tests/</file>
 
     <!-- rules -->
     <rule ref="PSR1"/>

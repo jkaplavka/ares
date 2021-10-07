@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<are:Ares_odpovedi
+  xmlns:are="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.3"
+  xmlns:D="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_datatypes/v_1.0.3"
+  xmlns:U="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/uvis_datatypes/v_1.0.3" odpoved_datum_cas="2021-10-06T18:37:26" odpoved_pocet="1" odpoved_typ="Basic" vystup_format="XML" xslt="klient" validation_XSLT="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_odpovedi.xsl"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.3 http://wwwinfo.mfcr.cz/ares/xml_doc/schemas/ares/ares_answer_basic/v_1.0.3/ares_answer_basic_v_1.0.3.xsd" Id="ares">
+  <are:Odpoved>
+    <D:PID>0</D:PID>
+    <D:VH>
+      <D:K>1</D:K>
+    </D:VH>
+    <D:PZA>1</D:PZA>
+    <D:UVOD>
+      <D:ND>Výpis z dat Registru ARES - aktuální stav ke dni 2021-10-06</D:ND>
+      <D:ADB>2021-10-06</D:ADB>
+      <D:DVY>2021-10-06</D:DVY>
+      <D:CAS>18:37:26</D:CAS>
+      <D:Typ_odkazu>0</D:Typ_odkazu>
+    </D:UVOD>
+    <D:VBAS>
+      <D:ICO zdroj="RZP">12345678</D:ICO>
+      <D:DIC zdroj="RZP">CZ12345678</D:DIC>
+      <D:OF zdroj="RZP">Joe Doe</D:OF>
+      <D:DV>1993-04-19</D:DV>
+      <D:PF zdroj="RZP">
+        <D:KPF>101</D:KPF>
+        <D:NPF>Fyzická osoba podnikající dle živnostenského zákona</D:NPF>
+      </D:PF>
+      <D:AD zdroj="ARES">
+        <D:UC>Střední 927</D:UC>
+        <D:PB>69301 Hustopeče</D:PB>
+      </D:AD>
+      <D:AA zdroj="ARES">
+        <D:IDA>412632955</D:IDA>
+        <D:KS>203</D:KS>
+        <D:NS>Česká republika</D:NS>
+        <D:NOK>Břeclav</D:NOK>
+        <D:N>Hustopeče</D:N>
+        <D:NCO>Hustopeče</D:NCO>
+        <D:NU>Střední</D:NU>
+        <D:CD>927</D:CD>
+        <D:TCD>1</D:TCD>
+        <D:CO>4</D:CO>
+        <D:PSC>69301</D:PSC>
+        <D:AU>
+          <U:KOL>60</U:KOL>
+          <U:KK>116</U:KK>
+          <U:KOK>3704</U:KOK>
+          <U:KO>584495</U:KO>
+          <U:KCO>412121</U:KCO>
+          <U:PSC>69301</U:PSC>
+          <U:KUL>58645</U:KUL>
+          <U:CD>927</U:CD>
+          <U:TCD>1</U:TCD>
+          <U:CO>4</U:CO>
+          <U:KA>10201645</U:KA>
+          <U:KOB>10147811</U:KOB>
+          <U:PCD>404469</U:PCD>
+        </D:AU>
+      </D:AA>
+      <D:PSU>NNAANZNNNNNNNNNNNNNNNNNNANNNNN</D:PSU>
+      <D:RRZ>
+        <D:ZU>
+          <D:KZU>370403</D:KZU>
+          <D:NZU>Městský úřad Hustopeče</D:NZU>
+        </D:ZU>
+        <D:FU>
+          <D:KFU>299</D:KFU>
+          <D:NFU>Hustopeče</D:NFU>
+        </D:FU>
+      </D:RRZ>
+      <D:KPP zdroj="RES">Neuvedeno</D:KPP>
+      <D:Nace>
+        <D:NACE zdroj="RES">32300</D:NACE>
+        <D:NACE zdroj="RES">G</D:NACE>
+      </D:Nace>
+      <D:PPI>
+        <D:PP zdroj="RZP">
+          <D:T>Výroba, obchod a služby neuvedené v přílohách 1 až 3 živnostenského zákona</D:T>
+        </D:PP>
+      </D:PPI>
+      <D:Obory_cinnosti>
+        <D:Obor_cinnosti>
+          <D:K>Z01038</D:K>
+          <D:T>Výroba, opravy a údržba sportovních potřeb, her, hraček a dětských kočárků</D:T>
+        </D:Obor_cinnosti>
+        <D:Obor_cinnosti>
+          <D:K>Z01047</D:K>
+          <D:T>Zprostředkování obchodu a služeb</D:T>
+        </D:Obor_cinnosti>
+        <D:Obor_cinnosti>
+          <D:K>Z01048</D:K>
+          <D:T>Velkoobchod a maloobchod</D:T>
+        </D:Obor_cinnosti>
+      </D:Obory_cinnosti>
+    </D:VBAS>
+  </are:Odpoved>
+</are:Ares_odpovedi>

@@ -48,9 +48,9 @@ class Adress
     /**
      * @JMS\SerializedName("D:PSC")
      *
-     * @var int|null
+     * @var string|null
      */
-    private ?int $postalCode = null;
+    private ?string $postalCode = null;
 
     /**
      * Get the value of state
@@ -105,9 +105,9 @@ class Adress
     /**
      * Get the value of postalCode
      *
-     * @return int|null
+     * @return string|null
      */
-    public function getPostalCode(): ?int
+    public function getPostalCode(): ?string
     {
         return $this->postalCode;
     }

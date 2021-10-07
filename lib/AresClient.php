@@ -24,8 +24,11 @@ class AresClient
         'timeout' => 10,
     ];
 
-    private GuzzleHttp\Client $httpClient;
     private Serializer $serializer;
+    private GuzzleHttp\Client $httpClient;
+
+    /** @var array<string, mixed> */
+    private array $httpClientConfig = [];
 
     /**
      * The Basic service displays basic information selected from more source registers.
@@ -45,25 +48,29 @@ class AresClient
      * - **timeout** (int) number of seconds greater or equal than zero
      *
      * @param array<string, mixed> $config array with configuration settings
+     * @param \GuzzleHttp\Client|null $httpClient optional custom instance of http client
      *
      * @throws \Webmozart\Assert\InvalidArgumentException
      */
-    public function __construct(array $config = [])
+    public function __construct(array $config = [], ?GuzzleHttp\Client $httpClient = null)
     {
-        $config = array_merge(static::DEFAULT_CONFIG, $config);
-        $this->validateConfig($config);
-
+        $this->httpClientConfig = array_merge(static::DEFAULT_CONFIG, $config);
+        $this->validateConfig($this->httpClientConfig);
         $this->serializer = SerializerBuilder::create()->build();
-        $this->httpClient = new GuzzleHttp\Client(
-            array_merge(
-                [
-                    'base_uri' => static::API_URL,
-                ],
-                $config
-            )
-        );
-
         $this->basic = new BasicService($this);
+
+        if ($httpClient === null) {
+            $this->httpClient = new GuzzleHttp\Client(
+                array_merge(
+                    [
+                        'base_uri' => static::API_URL,
+                    ],
+                    $this->httpClientConfig
+                )
+            );
+        } else {
+            $this->httpClient = $httpClient;
+        }
     }
 
     /**

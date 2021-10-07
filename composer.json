@@ -26,6 +26,7 @@
   },
   "require-dev": {
     "slevomat/coding-standard": "^7.0",
-    "phpstan/phpstan": "^0.12.99"
+    "phpstan/phpstan": "^0.12.99",
+    "phpunit/phpunit": "^9"
   }
 }

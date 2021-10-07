@@ -24,6 +24,12 @@ class Activity
      */
     private ?string $name = null;
 
+    public function __construct(?string $code = null, ?string $name = null)
+    {
+        $this->code = $code;
+        $this->name = $name;
+    }
+
     /**
      * Retuns code of business activity
      *
@@ -42,6 +48,12 @@ class Activity
     public function getName(): ?string
     {
         return $this->name;
+    }
+
+    public function equals(self $other): bool
+    {
+        return $this->getCode() === $other->getCode()
+            && $this->getName() === $other->getName();
     }
 
 }
