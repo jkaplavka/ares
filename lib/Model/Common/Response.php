@@ -30,7 +30,7 @@ class Response
     /**
      * Returns basic informations about business entity
      *
-     * @return ?\Ares\Model\Basic\BasicInfo
+     * @return \Ares\Model\Basic\BasicInfo|null
      */
     public function getBasicInfo(): ?BasicInfo
     {

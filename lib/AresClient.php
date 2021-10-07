@@ -50,7 +50,7 @@ class AresClient
      * @param array<string, mixed> $config array with configuration settings
      * @param \GuzzleHttp\Client|null $httpClient optional custom instance of http client
      *
-     * @throws \Webmozart\Assert\InvalidArgumentException
+     * @throws \Ares\Exception\InvalidArgumentException
      */
     public function __construct(array $config = [], ?GuzzleHttp\Client $httpClient = null)
     {

@@ -84,7 +84,7 @@ class BasicInfo
     /**
      * Returns tax number of business entity
      *
-     * @return ?string
+     * @return string|null
      */
     public function getTaxNumber(): ?string
     {
@@ -104,7 +104,7 @@ class BasicInfo
     /**
      * Returns date of registration of business entity
      *
-     * @return ?\DateTimeImmutable
+     * @return \DateTimeImmutable|null
      */
     public function getDateOfEstablishment(): ?DateTimeImmutable
     {
@@ -114,7 +114,7 @@ class BasicInfo
     /**
      * Returns legal form of business entity
      *
-     * @return ?\Ares\Model\Basic\LegalForm
+     * @return \Ares\Model\Basic\LegalForm|null
      */
     public function getLegalForm(): ?LegalForm
     {
@@ -124,7 +124,7 @@ class BasicInfo
     /**
      * Returns adress of business entity
      *
-     * @return ?\Ares\Model\Basic\Adress
+     * @return \Ares\Model\Basic\Adress|null
      */
     public function getAddress(): ?Adress
     {
@@ -134,7 +134,7 @@ class BasicInfo
     /**
      * Returns range number of employes in business entity
      *
-     * @return ?string
+     * @return string|null
      */
     public function getEmployes(): ?string
     {
@@ -144,7 +144,7 @@ class BasicInfo
     /**
      * Returns business activities of entity
      *
-     * @return ?\Ares\Model\Basic\Activities
+     * @return \Ares\Model\Basic\Activities|null
      */
     public function getActivities(): ?Activities
     {

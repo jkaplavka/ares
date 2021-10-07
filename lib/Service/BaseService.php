@@ -37,7 +37,8 @@ abstract class BaseService
      * - contains 8 digits
      *
      * @param string $regNumber
-     * @return void
+     *
+     * @throws \Ares\Exception\InvalidArgumentException
      */
     protected function validateRegNumber(string $regNumber): void
     {
